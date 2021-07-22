@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mini Project on table</title>
+    <style>
+        #formId {
+            border: 1px solid black;
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .label {
+            margin: 0;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .inputItems {
+            width: 100%;
+        }
+        
+        #check_box {
+            margin-top: 10px;
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <h2 style="text-align: center;">Signup</h2>
+    <form id="formId">
+        <div>
+            <p class="label">Full Name:</p>
+            <input class="inputItems" type="text" name="Full Name" placeholder="Full name" autofocus required maxlength="20" />
+        </div>
+        <div>
+            <p class="label">Email id:</p>
+            <input class="inputItems" type="text" name="Email id" placeholder="Email id" required/>
+        </div>
+        <div>
+            <P class="label">Password:</p>
+            <input class="inputItems" type="password" name="password" placeholder="password" required maxlength="15" />
+        </div>
+        <div>
+            <p class="label">Confirm password:</p>
+            <input class="inputItems" type="password" name="Confirm password" placeholder="Confirm password" required />
+        </div>
+        <div>
+            <p class="label">Gender:</p>
+            <input type="radio" name="male" value="male">Male</input>
+            <input type="radio" name="female" value="female">Female</input>
+            <input type="radio" name="other" value="other">Other</input>
+        </div>
+        <div>
+            <p class="label">Security Question:</p>
+            <select class="inputItems" name="Security Question">
+                <option value="first pet name">What is your first pet name?</option>
+                <option value="your first job ">What is your first job?</option>
+                <option value="your nick name">What is your nick name?</option>
+            </select>
+        </div>
+        <div>
+            <textarea class="inputItems" name="answer" cols="24" rows="5" placeholder="Answer" maxlength="30">
+            </textarea>
+        </div>
+        <div>
+            <input id="check_box" type="checkbox" name="terms&condition" value="accept" required> I agree to accept terms & conditions.
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
